@@ -1,0 +1,35 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Event {
+  id          String     @id @default(uuid())
+  title       String
+  description String?
+  date        DateTime
+  time        String
+  place       String?
+  status      String
+
+  userId      String
+  user        User        @relation(fields: [userId], references: [id] )
+
+  @@unique([userId,date,time])
+}
+
+model User {
+  id        String      @id @default(uuid())
+  email     String      @unique
+  password  String 
+  name      String?
+  role      String      
+  createdAt DateTime    @default(now())
+  deletedAt DateTime?   
+
+  events    Event[]
+}

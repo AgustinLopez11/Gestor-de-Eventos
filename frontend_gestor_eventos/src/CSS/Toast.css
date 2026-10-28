@@ -1,0 +1,11 @@
+.title-toast {
+    background-color: #10182b;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+.title-toast-err {
+    background-color: #a1040cb4;
+    color: aliceblue;
+    font-weight: bold;
+}

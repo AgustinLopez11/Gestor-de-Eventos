@@ -1,0 +1,51 @@
+.botones {
+    opacity: 70%;
+    border: 1px;
+    border-radius: 40%;
+    margin-left: 4px;
+}
+
+.botones:hover {
+    opacity: 100%;
+}
+
+.tarjeta {
+    border-radius: 18px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, .08);
+
+    transition: .25s;
+}
+
+.tarjeta:hover {
+    cursor: pointer;
+    transform: scale(1.08);
+    box-shadow:
+        0 12px 35px rgba(0, 0, 0, .18);
+
+}
+.bgcompletado{
+   background-color: #10182b; 
+}
+
+.bgpendiente{
+   background-color: #a1040c; 
+}
+
+.bgvencido{
+   background-color: #bb6707; 
+}
+
+.cartas{
+    animation: cartaAnimation 0.4s normal;
+}
+
+@keyframes cartaAnimation {
+    from{
+        opacity: 0%;
+    }
+    to{
+        opacity: 100%;
+    }
+}

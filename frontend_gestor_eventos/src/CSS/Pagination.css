@@ -1,0 +1,64 @@
+.botonControl {
+    background-color: #10182b;
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.botonNumero {
+    background-color: #a1040c;
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.botonControl:hover {
+    background-color: #10182b;
+    border: none;
+    transform: scale(1.1);
+}
+
+.botonNumero:hover {
+    background-color: #a1040c;
+    border: none;
+    transform: scale(1.1);
+}
+
+.botonControl:active {
+    background-color: #10182b !important;
+    border: none;
+    box-shadow: none;
+    transform: scale(0.7);
+}
+
+.botonNumero:active {
+    background-color: #a1040cb4 !important;
+    border: none;
+    box-shadow: none;
+    transform: scale(0.7);
+}
+
+.botonControl:focus-visible {
+    background-color: #10182bd0 !important;
+    box-shadow: none !important;
+}
+
+.botonNumero:focus,
+.botonNumero:focus-visible {
+    background-color: #a1040cb4 !important;
+    box-shadow: none !important;
+}
+
+.botonControl:disabled {
+    background-color: #10182bd0 !important;
+    box-shadow: none !important;
+}
+
+.botonNumero:disabled {
+    background-color: #f03f48 !important;
+    transform: scale(1.1);
+    font-weight: bold;
+}
+
+.span{
+    padding-left: 10px;
+    padding-right: 10px;
+}

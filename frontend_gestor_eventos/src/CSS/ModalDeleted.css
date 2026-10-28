@@ -1,0 +1,79 @@
+.botonNo {
+    background-color: #10182b;
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.botonSi {
+    background-color: #a1040c;
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.botonNo:hover {
+    background-color: #10182b;
+    border: none;
+    transform: scale(1.1);
+}
+
+.botonSi:hover {
+    background-color: #a1040c;
+    border: none;
+    transform: scale(1.1);
+}
+
+.botonNo:active {
+    background-color: #10182b !important;
+    border: none;
+    box-shadow: none;
+    transform: scale(0.7);
+}
+
+.botonSi:active {
+    background-color: #a1040cb4 !important;
+    border: none;
+    box-shadow: none;
+    transform: scale(0.7);
+}
+
+.botonNo:focus,
+.botonNo:focus-visible,
+.botonConfigNo {
+    background-color: #10182bd0 !important;
+    box-shadow: none !important;
+}
+
+.botonSi:focus,
+.botonSi:focus-visible {
+    background-color: #a1040cb4 !important;
+    box-shadow: none !important;
+}
+
+
+/*  Css de ModalConfing.jsx*/
+
+.title-ClosedSesion {
+    background-color: #10182b;
+}
+
+.botonConfigNo {
+    border-color: white !important;
+}
+
+/*  Css de Boton cargando de DashBoard */
+
+.cargando {
+    animation: cargandoBoton 1s infinite;
+    background-color: aliceblue;
+    margin-right: 10px;
+}
+
+@keyframes cargandoBoton {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
